@@ -1,0 +1,13 @@
+spring:
+  jpa:
+    hibernate:
+      ddl-auto: update
+  datasource:
+    url: jdbc:mysql://${MYSQL_HOST:localhost}:3306/eta
+    username: ENC(stQVPbWXHNP4+ZQOUYbW4raeKmItFwV638MwtZIT7K0=)
+    password: ENC(cR5pQJ/ApbXT2JSCrHNdlH0DxHOjL40MQ0Unuue3Jfg=)
+    driver-class-name: com.mysql.jdbc.Driver
+
+jasypt:
+  encryptor:
+    bean: jasyptStringEncryptor
